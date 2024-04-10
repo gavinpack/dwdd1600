@@ -76,7 +76,7 @@ main ol {
 }
 
 main dl dt {
-    color: #bf9075;
+    color: #6e5243;
     font-weight: 700;
 }
 
@@ -99,7 +99,7 @@ main ul li {
 main address {
     font-style: normal;
     color: white;
-    background-color: #bf9075;
+    background-color: #6e5243;
     padding: .5rem;
     width: 12.5rem;
     border: 1px solid #0e6275;
