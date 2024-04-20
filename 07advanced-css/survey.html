@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Stop Motion Muse provides information on the history of Stop Motion as well as resources to help in your journey.">
+        <meta name="author" content="Gavin Pack">
+        <link rel="stylesheet" href="motion.css">
+
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        
+        <title>Stop Motion Muse: History</title>
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,800;1,300;1,800&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <!-- Start of the page header -->
+        <header>
+            <img src="images/logo.PNG" alt="Site logo" width="100" height="92">
+            <div>
+                <h1 id="SMM">Stop Motion Muse</h1>
+                <p>Animation, One Frame at a Time</p>
+            </div>
+        </header>
+        
+        <!-- Start of the page navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">History</a></li>
+                <li><a href="use.html">Use</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="active"><a href="survey.html">Survey</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Start of the page content -->
+        <main>
+            <h1>Survey</h1>
+
+            <form method="get" class="myForm" action="thanks.html">
+
+                <fieldset>
+                    <legend>User information</legend>
+                    <label>
+                        First Name*<input type="text" name="fname" required>
+                    </label>
+        
+                    <label>
+                        Last Name*<input type="text" name="lname" required>
+                    </label>
+
+                    <label>
+                        Email*<input type="email" name="email" required placeholder="emailname@email.com">
+                    </label>
+        
+                    <label>
+                        Phone Number<input type="tel" name="phone" placeholder="987-555-1234">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>What forms of stopmotion interest you?</legend>
+    
+                    <label>
+                        <input type="checkbox" name="claymation" value="chosen">
+                        Claymation
+                    </label>
+    
+                    <label>
+                        <input type="checkbox" name="puppet" value="chosen">
+                        Puppet Animation
+                    </label>
+    
+                    <label>
+                        <input type="checkbox" name="lego" value="chosen">
+                        LEGO Animation
+                    </label>
+    
+                    <label>
+                        <input type="checkbox" name="cutout" value="chosen">
+                        Cutout Animation
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="pain" value="chosen">
+                        Paint Animation
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="other" value="chosen">
+                        Other
+                    </label>
+                    
+    
+                </fieldset>
+    
+                <fieldset>
+                    <legend>What is your skill level in stopmotion?</legend>
+                    <label>
+                        <input type="radio" name="method" value="beginner">
+                        Beginner
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="method" value="intermediate">
+                        Intermediate
+                    </label>
+    
+                    <label>
+                        <input type="radio" name="method" value="advanced">
+                        Advanced
+                    </label>
+
+                    <label>
+                        <input type="radio" name="method" value="expert">
+                        Expert
+                    </label>
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>How do you typically consume stop motion animations?</legend>
+                    <label> 
+                        <select name="time">
+                            <option value="select">Select One</option>
+                            <option value="streaming">Online streaming platforms</option>
+                            <option value="festivals">Film festivals</option>
+                            <option value="blu-ray">DVD/Blu-ray</option>
+                            <option value="social">Social media</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </label>
+                    
+                </fieldset>
+    
+                
+    
+                <label> Notes
+                    <textarea name="notes"></textarea>
+                </label>
+                
+               
+    
+                <input type="submit" value="Send Survey">
+            </form>
+            
+                    
+        </main>
+        
+        <!-- Start of the page footer -->
+        <footer>
+            <p>&copy; 2024 &bull; Gavin Pack &bull; <a href="mailto:10839088@uvu.edu">Email Us</a></p>
+        </footer>
+    </body>
+    
+</html>
