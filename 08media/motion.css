@@ -1,0 +1,336 @@
+/* prevent problems with different browsers */
+* {box-sizing: border-box;}
+
+/* Body */
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+}
+
+/* Header*/
+header {
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: end;
+}
+
+header div {
+    padding-left: 2vw;
+    
+}
+
+header h1 {
+    margin: 0;
+    color: #0e6275;
+}
+header p {
+    margin: 0;
+    color: #0e6275;
+    letter-spacing: .5px;
+}
+
+/* Nav Bar*/
+
+/* Big Screen */
+@media only screen and (min-width: 801px)  {
+    nav {
+        background-color: #88e8f2;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0 2vw;
+        margin: 0;
+        display: flex;
+    }
+    nav a {
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: #0e6275;
+        font-weight: 700;
+        display: block;
+        padding: .83rem 2rem;
+    }
+    
+    nav li.active a {
+        background-color: #0e6275;
+        color: #88e8f2;
+    }
+    
+    nav a:hover {
+        color: white;
+    }
+}
+
+
+
+/* Small Screen */
+
+@media only screen and (max-width: 800px)  {
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+    
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: capitalize;
+        text-align: center;
+        border-bottom: solid 1px #aaa;
+        color: #0e6275;
+    }
+
+    nav .active a {
+        background-image: linear-gradient(to bottom, #88e8f2, #0e6275);
+        color: white;
+        text-shadow: -1px -1px 0 #0e6275, 1px -1px 0 #0e6275, -1px 1px 0 #0e6275, 1px 1px 0 #0e6275;
+    }
+
+
+} 
+
+
+
+/* Main */
+
+main {
+    padding: 1rem 2vw;
+}
+
+main h1 {
+    color: #b40412;
+}
+
+main h2 {
+    color: #0e6275;
+    margin-bottom: .3rem;
+}
+
+main p {
+    color: #2f3133;
+    margin: 0 0 .3rem 0;
+}
+
+main ol {
+    padding: .5rem 3vw;
+    background-color: #efefef;
+}
+
+main dl dt {
+    color: #6e5243;
+    font-weight: 700;
+}
+
+main dl dd {
+    color: #0e6275;
+    font-size: .9rem;
+    margin-bottom: .5rem;
+}
+
+main ul {
+    list-style-type: square;
+}
+
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main address {
+    font-style: normal;
+    color: white;
+    background-color: #6e5243;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 1px solid #0e6275;
+    border-radius: .5rem;
+}
+
+main address a {
+    color: #88e8f2;
+}
+
+/* Link in Main */
+.my-link {
+    color: #0e6275;
+}
+
+main address a {
+    color: #88e8f2;
+}
+
+main a {
+    color: #0e6275;
+}
+
+main a:hover {
+    color: rgb(239,0,24);
+}
+
+
+/* hero */
+
+.index-img {
+    width: 100%;
+    margin: 0;
+}
+
+.index-img img {
+    width: 100%;
+    height: auto;
+}
+
+
+.index-img figcaption {
+    text-align: center;
+    font-size: .75rem;
+    color: #0e6275;
+}
+
+
+/* Gallery img's */
+
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #0e6275;
+}
+
+div.gallery img:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+
+
+/* Survey */
+
+
+.myForm fieldset {
+    border: 1px solid #88e8f2;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.myForm legend {
+    color: #000;
+    font-size: .8rem;
+    background-color: #88e8f2;
+    border-radius: .2rem;
+}
+
+.myForm label {
+    margin: .5rem;
+}
+
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm textarea {
+    display: block;
+    color: #0e6275;
+    accent-color: #0e6275;
+}
+
+.myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm select, .myForm textarea {
+    border: solid 1px #0e6275;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 200;
+    background-color: rgba(147, 208, 221, 0.379);
+
+}
+
+.myForm textarea {
+    height: 6rem;
+    color: #0e6275;
+}
+
+
+.myForm :required {
+    background-color: rgba(147, 208, 221, 0.379);
+}
+
+
+.myForm [type=submit] {
+    background-color: #0e6275;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+}
+ 
+
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    color: #0e6275;
+    padding: 1rem 0;
+    font-size: .8rem;
+    clear: both;
+}
+
+footer a {
+    color: #0e6275;
+}
+
+
+/* Whole Page */
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+
+/* Table */
+
+table.table-classes {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.table-classes th {
+    background-color: #0e6275;
+    color: white;
+    padding: .5rem 2vw;
+    text-align: left;
+}
+
+table.table-classes td {
+    color: #0e6275;
+    padding: .4rem 2vw;
+}
+
+table.table-classes tr:nth-child(odd){
+    background-color: #f7f7f7;
+}
+
+table.table-classes tr:hover {
+    background-color: #0e627535;
+}
+
+
+
+
+
+
